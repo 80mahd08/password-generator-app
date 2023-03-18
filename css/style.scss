@@ -1,0 +1,184 @@
+$color1 : #a4ffaf;
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #101014;
+  position: relative;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1px;
+  user-select: none;
+  &>p{
+    color: #878492;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , 190%);
+  }
+  a{
+    background-color: #{$color1};
+    text-decoration: none;
+    color: #182a1c;
+    padding: 15px 122px;
+    position: relative;
+    top: 45px;
+    transition: all 0.2s ease-in-out;
+    &:active{
+      background-color: transparent;
+      color: #{$color1};
+      border: 2px solid #{$color1};
+    }
+  }
+  input[type="range"]{
+    width: 322px;
+    position: relative;
+    bottom: 30px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    &::-webkit-slider-runnable-track{
+      background-color: #101014;
+      height: 6px;
+
+    }
+    &::-webkit-slider-thumb{
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background-color: #a4ffaf;
+      border-radius: 50%;
+      position: relative;
+      top: -7px;
+      box-shadow: 0 0 0 0 #a4ffaf;
+      transition: 0.2s all ease-in-out ;
+      &:active{
+        border: 1px solid #a4ffaf;
+        background-color:#24232a;
+        z-index: 999;
+      }
+    }
+  }
+  input[type="checkbox"]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid #a4ffaf;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:checked{
+      background-color: #a4ffaf;
+    }
+  }
+  label{
+    color: whitesmoke;
+    position: relative;
+    bottom: 5px;
+    margin-left: 5px;
+  }
+  .container{
+    background-color:#101014;
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    bottom: 50% ;
+    transform: translate(-50% , 122%);
+    header{
+      background-color: #24232a;
+      height: 50px;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      color: whitesmoke;
+      .copy{
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:active{
+          color: #{$color1};
+        }
+      }
+      .pass-dis{
+        margin-top: 4px;
+      }
+    }
+    main{
+      background-color: #24232a;
+      padding: 12px;
+      height: 430px;
+      width: 100%;
+      position: absolute;
+      top: 65px;
+      .head-head{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 12px;
+        color: whitesmoke;
+        output{
+          position: relative;
+          top: 14px;
+          color: #a4ffaf;
+        }
+      }
+      .strength-div{
+        background-color: #101014;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        p{
+          color: #878492;
+          position: relative;
+          left: 10px;
+        }
+        .span1{
+          display: inline-block;
+          width: 5px;
+          height: 20px;
+          background-color: transparent;
+          border: 1px solid #e6e5ed;
+          margin: 15px;
+          margin-right: 13px;
+        }
+        .span2{
+          display: inline-block;
+          width: 5px;
+          height: 20px;
+          background-color: transparent;
+          border: 1px solid #e6e5ed;
+          position: relative;
+          right: 13px;
+          bottom: 15px;
+        }
+        .span3{
+          display: inline-block;
+          width: 5px;
+          height: 20px;
+          background-color: transparent;
+          border: 1px solid #e6e5ed;
+          position: relative;
+          right: 13px;
+          bottom: 15px;
+        }
+        .span4{
+          display: inline-block;
+          width: 5px;
+          height: 20px;
+          background-color: transparent;
+          border: 1px solid #e6e5ed;
+          position: relative;
+          right: 13px;
+          bottom: 15px;
+        }
+      }
+      .strength-lett-dis{
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+        color: whitesmoke;
+      }
+    }
+  }
+}

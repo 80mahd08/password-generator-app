@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>password generator</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <p>Password Generator</p>
+  <div class="container">
+    <header>
+      <span class="pass-dis" id="pass-dis"></span>
+      <span class="material-symbols-outlined copy" title="copy" id="copy" onclick="copyText()">
+        file_copy
+        </span>
+    </header>
+    <main>
+      <form action="" oninput="val.value = parseInt(len.value)">
+        <div class="head-head"><p>Character Length</p><output name="val">0</output></div><br>
+        <input type="range" max="20" min="0" name="len" id="len" value="0" class="len"><br>
+      </form>
+      <br>
+      <div class="impots">
+        <input type="checkbox" name="check1" id="check1">
+        <label for="check1">Include Uppercase Letters</label><br><br>
+        <input type="checkbox" name="check2" id="check2">
+        <label for="check2">Include Lowercase Letters</label><br><br>
+        <input type="checkbox" name="check3" id="check3">
+        <label for="check3">Include Number</label><br><br>
+        <input type="checkbox" name="check4" id="check4">
+        <label for="check4">Include Symbols</label><br><br>
+      </div>
+      <div id="strength-div" class="strength-div">
+        <p>STRENGTH :</p>
+        <div class="strength-dis">
+          <span class="strength-lett-dis" id="strength-lett-dis">Very weak</span>
+          <span id="strength-color-dis" class="strength-color-dis">
+            <span id="span1" class="span1"></span>
+            <span id="span2" class="span2"></span>
+            <span id="span3" class="span3"></span>
+            <span id="span4" class="span4"></span>
+          </span>
+        </div>
+      </div>
+      <a onclick="gen()" href="#ds">GENERATE</a>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

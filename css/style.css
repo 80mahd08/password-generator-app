@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #101014;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body > p {
+  color: #878492;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 190%);
+}
+body a {
+  background-color: #a4ffaf;
+  text-decoration: none;
+  color: #182a1c;
+  padding: 15px 122px;
+  position: relative;
+  top: 45px;
+  transition: all 0.2s ease-in-out;
+}
+body a:active {
+  background-color: transparent;
+  color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+}
+body input[type=range] {
+  width: 322px;
+  position: relative;
+  bottom: 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+body input[type=range]::-webkit-slider-runnable-track {
+  background-color: #101014;
+  height: 6px;
+}
+body input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #a4ffaf;
+  border-radius: 50%;
+  position: relative;
+  top: -7px;
+  box-shadow: 0 0 0 0 #a4ffaf;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+body input[type=range]::-webkit-slider-thumb:active {
+  border: 1px solid #a4ffaf;
+  background-color: #24232a;
+  z-index: 999;
+}
+body input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #a4ffaf;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+body input[type=checkbox]:checked {
+  background-color: #a4ffaf;
+}
+body label {
+  color: whitesmoke;
+  position: relative;
+  bottom: 5px;
+  margin-left: 5px;
+}
+body .container {
+  background-color: #101014;
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 122%);
+}
+body .container header {
+  background-color: #24232a;
+  height: 50px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+body .container header .copy {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+body .container header .copy:active {
+  color: #a4ffaf;
+}
+body .container header .pass-dis {
+  margin-top: 4px;
+}
+body .container main {
+  background-color: #24232a;
+  padding: 12px;
+  height: 430px;
+  width: 100%;
+  position: absolute;
+  top: 65px;
+}
+body .container main .head-head {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 12px;
+  color: whitesmoke;
+}
+body .container main .head-head output {
+  position: relative;
+  top: 14px;
+  color: #a4ffaf;
+}
+body .container main .strength-div {
+  background-color: #101014;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+body .container main .strength-div p {
+  color: #878492;
+  position: relative;
+  left: 10px;
+}
+body .container main .strength-div .span1 {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #e6e5ed;
+  margin: 15px;
+  margin-right: 13px;
+}
+body .container main .strength-div .span2 {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #e6e5ed;
+  position: relative;
+  right: 13px;
+  bottom: 15px;
+}
+body .container main .strength-div .span3 {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #e6e5ed;
+  position: relative;
+  right: 13px;
+  bottom: 15px;
+}
+body .container main .strength-div .span4 {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #e6e5ed;
+  position: relative;
+  right: 13px;
+  bottom: 15px;
+}
+body .container main .strength-lett-dis {
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+  color: whitesmoke;
+}/*# sourceMappingURL=style.css.map */
